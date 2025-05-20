@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <title>Serverul Meu SMP</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer>
+    function showPopup() {
+      document.getElementById("popup").style.display = "flex";
+    }
+    function closePopup() {
+      document.getElementById("popup").style.display = "none";
+    }
+  </script>
+</head>
+<body>
+
+  <header>
+    <h1>Serverul Meu SMP</h1>
+    <div class="header-buttons">
+      <button onclick="showPopup()">HOW TO JOIN</button>
+      <a href="faq.html"><button>FAQ</button></a>
+      <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+        <button class="rickroll">🎵</button>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section class="about">
+      <h2>Despre Noi</h2>
+      <p>Suntem un SMP românesc activ, fără pay-to-win, cu PvP activ, comunitate activă și staff corect. Hai cu noi!</p>
+    </section>
+  </main>
+
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup()">&times;</span>
+      <h2>Conectare</h2>
+      <p>Intră în Minecraft → Multiplayer → Add Server</p>
+      <p><strong>IP:</strong> play.numeletau.eu</p>
+      <p><strong>Versiune:</strong> 1.20+</p>
+    </div>
+  </div>
+
+</body>
+</html>
