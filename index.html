@@ -2,12 +2,19 @@
 <html lang="ro">
 <head>
   <meta charset="UTF-8">
-  <title>Serverul Meu SMP</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Server SMP</title>
   <link rel="stylesheet" href="style.css">
-  <script defer>
+  <script>
+    // Redirecționează automat pe mobil
+    if (/Mobi|Android|iPhone|iPad/i.test(navigator.userAgent)) {
+      window.location.href = "mobile.html";
+    }
+
     function showPopup() {
       document.getElementById("popup").style.display = "flex";
     }
+
     function closePopup() {
       document.getElementById("popup").style.display = "none";
     }
@@ -29,15 +36,15 @@
   <main>
     <section class="about">
       <h2>Despre Noi</h2>
-      <p>Suntem un SMP românesc activ, fără pay-to-win, cu PvP activ, comunitate activă și staff corect. Hai cu noi!</p>
+      <p>Acesta este serverul nostru SMP! PvP, evenimente și distracție fără pay-to-win. Intră și joacă alături de comunitatea noastră românească!</p>
     </section>
   </main>
 
   <div id="popup" class="popup">
     <div class="popup-content">
       <span class="close" onclick="closePopup()">&times;</span>
-      <h2>Conectare</h2>
-      <p>Intră în Minecraft → Multiplayer → Add Server</p>
+      <h2>Cum te conectezi</h2>
+      <p>Deschide Minecraft → Multiplayer → Add Server</p>
       <p><strong>IP:</strong> play.numeletau.eu</p>
       <p><strong>Versiune:</strong> 1.20+</p>
     </div>
