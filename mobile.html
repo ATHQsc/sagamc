@@ -1,1 +1,47 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Server SMP - Mobil</title>
+  <script>
+    function showPopup() {
+      document.getElementById("popup").style.display = "flex";
+    }
+    function closePopup() {
+      document.getElementById("popup").style.display = "none";
+    }
+  </script>
+</head>
+<body style="margin: 0; font-family: sans-serif; background-color: #111; color: white;">
 
+  <header style="background-color: #FFD700; padding: 20px; text-align: center;">
+    <h1 style="margin: 0; color: white;">Serverul Meu SMP</h1>
+    <div style="margin-top: 10px;">
+      <button onclick="showPopup()" style="margin: 5px; border-radius: 10px;">HOW TO JOIN</button>
+      <a href="faq.html"><button style="margin: 5px; border-radius: 10px;">FAQ</button></a>
+      <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+        <button style="margin: 5px; border-radius: 10px; background: transparent; border: 1px solid white; color: white;">🎵</button>
+      </a>
+    </div>
+  </header>
+
+  <main style="padding: 20px; display: flex; justify-content: center;">
+    <section style="background-color: white; color: black; padding: 20px; border-radius: 20px; max-width: 90%; text-align: center;">
+      <h2>Despre Noi</h2>
+      <p>Server SMP pentru telefon! Joacă de oriunde cu prietenii tăi, fără lag și fără griji!</p>
+    </section>
+  </main>
+
+  <div id="popup" style="display:none; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: rgba(0,0,0,0.6); justify-content: center; align-items: center;">
+    <div style="background: white; color: black; padding: 30px; border-radius: 20px; max-width: 90%; text-align: center; position: relative;">
+      <span onclick="closePopup()" style="position: absolute; top: 10px; right: 15px; cursor: pointer; font-size: 24px;">&times;</span>
+      <h2>Cum intri</h2>
+      <p>Minecraft PE → Servers → Add Server</p>
+      <p><strong>IP:</strong> play.numeletau.eu</p>
+      <p><strong>Versiune:</strong> Bedrock 1.20+</p>
+    </div>
+  </div>
+
+</body>
+</html>
