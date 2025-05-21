@@ -1,50 +1,47 @@
 <!DOCTYPE html>
 <html lang="ro">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Server SMP</title>
-  <link rel="stylesheet" href="style.css">
   <script>
-    // Redirecționează automat pe mobil
-    if (/Mobi|Android|iPhone|iPad/i.test(navigator.userAgent)) {
+    if (window.innerWidth <= 768) {
       window.location.href = "mobile.html";
     }
 
     function showPopup() {
       document.getElementById("popup").style.display = "flex";
     }
-
     function closePopup() {
       document.getElementById("popup").style.display = "none";
     }
   </script>
 </head>
-<body>
+<body style="margin: 0; font-family: sans-serif; background-image: url('bg.png'); background-size: cover; background-position: center; color: white;">
 
-  <header>
-    <h1>Serverul Meu SMP</h1>
-    <div class="header-buttons">
-      <button onclick="showPopup()">HOW TO JOIN</button>
-      <a href="faq.html"><button>FAQ</button></a>
+  <header style="background-color: #FFD700; padding: 20px; text-align: center;">
+    <h1 style="margin: 0; color: white;">Serverul Meu SMP</h1>
+    <div style="margin-top: 10px;">
+      <button onclick="showPopup()" style="margin: 5px; border-radius: 10px;">HOW TO JOIN</button>
+      <a href="faq.html"><button style="margin: 5px; border-radius: 10px;">FAQ</button></a>
       <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
-        <button class="rickroll">🎵</button>
+        <button style="margin: 5px; border-radius: 10px; background: transparent; border: 1px solid white; color: white;">🎵</button>
       </a>
     </div>
   </header>
 
-  <main>
-    <section class="about">
+  <main style="padding: 40px; display: flex; justify-content: center;">
+    <section style="background-color: white; color: black; padding: 30px; border-radius: 20px; max-width: 600px; text-align: center;">
       <h2>Despre Noi</h2>
       <p>Acesta este serverul nostru SMP! PvP, evenimente și distracție fără pay-to-win. Intră și joacă alături de comunitatea noastră românească!</p>
     </section>
   </main>
 
-  <div id="popup" class="popup">
-    <div class="popup-content">
-      <span class="close" onclick="closePopup()">&times;</span>
-      <h2>Cum te conectezi</h2>
-      <p>Deschide Minecraft → Multiplayer → Add Server</p>
+  <div id="popup" style="display:none; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: rgba(0,0,0,0.6); justify-content: center; align-items: center;">
+    <div style="background: white; color: black; padding: 30px; border-radius: 20px; max-width: 400px; text-align: center; position: relative;">
+      <span onclick="closePopup()" style="position: absolute; top: 10px; right: 15px; cursor: pointer; font-size: 24px;">&times;</span>
+      <h2>Cum intri</h2>
+      <p>Minecraft → Multiplayer → Add Server</p>
       <p><strong>IP:</strong> play.numeletau.eu</p>
       <p><strong>Versiune:</strong> 1.20+</p>
     </div>
